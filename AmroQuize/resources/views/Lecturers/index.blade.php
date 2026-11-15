@@ -28,7 +28,7 @@
             <tbody>
             @forelse ($lecturers as $lecturer)
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{ $lecturer->id }}</td>
                     <td>{{ $lecturer->user->name }}</td>
                     <td>{{ $lecturer->user->email }}</td>
                     <td>{{ $lecturer->name }}</td>
