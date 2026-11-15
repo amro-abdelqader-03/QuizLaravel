@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Lecture extends Model
 {
     //
+    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
 }

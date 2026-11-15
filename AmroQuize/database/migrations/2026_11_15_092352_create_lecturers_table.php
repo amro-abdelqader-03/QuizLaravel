@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('department');
             $table->string('office_room');
             $table->string('photo');
-            $table->boolean('isActivated');
+            $table->boolean('isActivated')->default(true);
             $table->timestamps();
 
             $table->foreign('user_id')->references('id')->on('users');
