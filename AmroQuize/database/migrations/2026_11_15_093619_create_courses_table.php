@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('semester');
             $table->timestamps();
 
-            $table->foreign('lecturer_id')->references('id')->on('lecturers');
+            $table->foreign('lecturer_id')->references('id')->on('lecturers')->restrictOnDelete();
         });
     }
 

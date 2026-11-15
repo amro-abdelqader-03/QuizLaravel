@@ -19,8 +19,8 @@ return new class extends Migration
             $table->decimal('grade', 4, 2);
             $table->timestamps();
 
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('user_id')->references('id')->on('users')->restrictOnDelete();
+            $table->foreign('course_id')->references('id')->on('courses')->restrictOnDelete();
         });
     }
 

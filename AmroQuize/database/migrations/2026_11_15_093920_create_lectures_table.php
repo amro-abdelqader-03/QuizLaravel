@@ -20,7 +20,7 @@ return new class extends Migration
             $table->dateTime('scheduled_at');
             $table->timestamps();
 
-            $table->foreign('course_id')->references('id')->on('courses');
+            $table->foreign('course_id')->references('id')->on('courses')->restrictOnDelete();
         });
     }
 
