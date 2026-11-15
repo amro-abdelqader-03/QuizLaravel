@@ -24,14 +24,26 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
             <div class="form-group">
-                <strong>Shop name:</strong> <br/>
-                {{ $lecturer->name }}
+                <strong>Employee Number:</strong> <br/>
+                {{ $lecturer->employee_number }}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
             <div class="form-group">
-                <strong>Shop location:</strong> <br/>
-                {{ $lecturer->location }}
+                <strong>Department:</strong> <br/>
+                {{ $lecturer->department }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2">
+            <div class="form-group">
+                <strong>Office Room:</strong> <br/>
+                {{ $lecturer->office_room }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Photo:</strong><br/>
+                <img src="/images/{{ $lecturer->photo }}" width="500px">
             </div>
         </div>
     </div>

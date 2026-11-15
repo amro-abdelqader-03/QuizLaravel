@@ -132,34 +132,15 @@
             <!-- Navigation -->
             <nav class="sidebar-nav nav flex-column">
 
-                <a href="#" class="nav-link">
-                    <i class="fa-solid fa-gauge"></i>
-                    Dashboard
-                </a>
 
-                <a href="#" class="nav-link">
+                <a href="{{ route('users.index') }}" class="nav-link">
                     <i class="fa-solid fa-circle-user"></i>
                     Users
                 </a>
 
-                <a href="#" class="nav-link">
-                    <i class="fa-solid fa-truck"></i>
-                    Sellers
-                </a>
-
-                <a href="#" class="nav-link">
-                    <i class="fa-solid fa-layer-group"></i>
-                    Categories
-                </a>
-
-                <a href="#" class="nav-link">
-                    <i class="fa-solid fa-border-all"></i>
-                    Products
-                </a>
-
-                <a href="#" class="nav-link">
-                    <i class="fa-solid fa-table-cells"></i>
-                    Orders
+                <a href="{{ route('lecturers.index') }}" class="nav-link">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                    Lecturers
                 </a>
 
             </nav>

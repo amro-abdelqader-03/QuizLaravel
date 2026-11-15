@@ -17,10 +17,11 @@
             <thead>
                 <tr>
                     <th width="80px">No</th>
+                    <th>Photo</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Shop name</th>
-                    <th>Shop location</th>
+                    <th>Employee Number</th>
+                    <th>Office Room</th>
                     <th width="250px">Action</th>
                 </tr>
             </thead>
@@ -29,10 +30,11 @@
             @forelse ($lecturers as $lecturer)
                 <tr>
                     <td>{{ $lecturer->id }}</td>
+                    <td><img src="/images/{{ $lecturer->photo }}" width="100px"></td>
                     <td>{{ $lecturer->user->name }}</td>
                     <td>{{ $lecturer->user->email }}</td>
-                    <td>{{ $lecturer->name }}</td>
-                    <td>{{ $lecturer->location }}</td>
+                    <td>{{ $lecturer->employee_number }}</td>
+                    <td>{{ $lecturer->office_room }}</td>
                     <td>
                         <form action="{{ route('lecturers.destroy',$lecturer->id) }}" method="POST">
              

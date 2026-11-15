@@ -14,57 +14,56 @@
         @method('PUT')
   
         <div class="mb-3">
-            <label for="inputName" class="form-label"><strong>Employee Number:</strong></label>
+            <label for="inputEmployeeNumber" class="form-label"><strong>Employee Number:</strong></label>
             <input 
                 type="text" 
-                name="name" 
+                name="employee_number" 
                 value="{{ $lecturer->employee_number }}"
-                class="form-control @error('name') is-invalid @enderror" 
-                id="inputName" 
-                placeholder="Name">
-            @error('name')
+                class="form-control @error('employee_number') is-invalid @enderror" 
+                id="inputEmployeeNumber" 
+                placeholder="employee number">
+            @error('employee_number')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
   
         <div class="mb-3">
-            <label for="inputLocation" class="form-label"><strong>Shope location:</strong></label>
+            <label for="inputDepartment" class="form-label"><strong>Department:</strong></label>
             <input 
                 type="text" 
-                name="location" 
+                name="department" 
                 value="{{ $lecturer->department }}"
-                class="form-control @error('location') is-invalid @enderror" 
-                id="inputLocation" 
-                placeholder="location">
-            @error('email')
+                class="form-control @error('department') is-invalid @enderror" 
+                id="inputDepartment" 
+                placeholder="department">
+            @error('department')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
 
         <div class="mb-3">
-            <label for="inputLocation" class="form-label"><strong>Shope location:</strong></label>
+            <label for="inputOfficeRoom" class="form-label"><strong>Office Room:</strong></label>
             <input 
                 type="text" 
-                name="location" 
+                name="office_room" 
                 value="{{ $lecturer->office_room }}"
                 class="form-control @error('location') is-invalid @enderror" 
-                id="inputLocation" 
-                placeholder="location">
-            @error('email')
+                id="inputOfficeRoom" 
+                placeholder="office room">
+            @error('office_room')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
 
         <div class="mb-3">
-            <label for="inputLocation" class="form-label"><strong>Shope location:</strong></label>
+            <label for="inputPhoto" class="form-label"><strong>Photo:</strong></label>
             <input 
-                type="text" 
-                name="location" 
-                value="{{ $lecturer->office_room }}"
-                class="form-control @error('location') is-invalid @enderror" 
-                id="inputLocation" 
-                placeholder="location">
-            @error('email')
+                type="file" 
+                name="photo" 
+                class="form-control @error('photo') is-invalid @enderror" 
+                id="inputPhoto">
+            <img src="/images/{{ $lecturer->photo }}" width="300px">
+            @error('image')
                 <div class="form-text text-danger">{{ $message }}</div>
             @enderror
         </div>
